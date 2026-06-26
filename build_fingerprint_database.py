@@ -9,7 +9,7 @@ from scipy.ndimage import maximum_filter
 # SONG FOLDER
 # ============================================================
 
-SONG_FOLDER = r"C:\Users\sukhv\Downloads\songs"
+SONG_FOLDER = "songs"
 
 # ============================================================
 # PARAMETERS
