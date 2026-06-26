@@ -9,7 +9,7 @@ from collections import defaultdict
 # ENTER QUERY SONG PATH
 # ============================================================
 
-QUERY_SONG = r"C:\Users\sukhv\Downloads\query.mp3"
+QUERY_SONG = "query.mp3"
 
 # ============================================================
 # PARAMETERS (SAME AS DATABASE)
