@@ -218,3 +218,8 @@ for song, votes in song_counter.most_common(5):
     print(f"{song:35} {votes} matches")
 
 print("\nRecognition Completed Successfully!")
+# Save result for Streamlit
+with open("result.txt", "w") as f:
+    f.write(f"Matched Song: {matched_song}\n")
+    f.write(f"Best Offset: {best_offset:.2f} seconds\n")
+    f.write(f"Matching Fingerprints: {best_votes}\n")
