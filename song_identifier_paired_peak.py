@@ -181,6 +181,27 @@ print(f"Matched Song          : {matched_song}")
 print(f"Most Common Offset    : {best_offset:.2f} seconds")
 print(f"Matching Fingerprints : {best_votes}")
 print("========================================")
+# ==========================================
+# OFFSET HISTOGRAM
+# ==========================================
+
+import matplotlib.pyplot as plt
+
+matched_offsets = []
+
+for song, offset in matches:
+    if song == matched_song:
+        matched_offsets.append(offset)
+
+plt.figure(figsize=(10,5))
+plt.hist(matched_offsets, bins=40, edgecolor="black")
+
+plt.title(f"Offset Histogram - {matched_song}")
+plt.xlabel("Offset (seconds)")
+plt.ylabel("Number of Matching Fingerprints")
+plt.grid(True)
+
+plt.show()
 
 # ============================================================
 # OPTIONAL : SHOW TOP 5 MATCHES
